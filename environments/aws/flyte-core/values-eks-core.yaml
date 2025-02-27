@@ -253,7 +253,9 @@ configmap:
           type: bucket
           rate: 100
           capacity: 1000
-
+    # Enable AWS Secrets Manager for retrieving secrets
+    # webhook:
+    #  secretManagerType: "AWS"
   
     manager:
       pod-application: flytepropeller
